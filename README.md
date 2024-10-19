@@ -25,3 +25,26 @@ This API Gateway project implements three load balancing strategies: Least Conne
 
 * **WebSocket Request Benchmark**  
 ![websocket](https://github.com/user-attachments/assets/863b6ff2-7668-4956-ab48-f3a7746afaf9)
+
+## Getting Started
+
+### Prerequisites
+
+Before running the API Gateway, you need to start the backend servers. 
+
+### Step 1: Run Backend Servers
+
+1. Navigate to the **multibackend** folder.
+2. Run the backend servers using the following commands:
+
+```bash
+cd multibackend
+cd backend_1 # go to every backend folder backend_1, backend_2, and backend_3
+node src/server.js # This will start backend_1, backend_2, and backend_3
+```
+```bash
+cd Gateways
+cd 'gateway ws' #GO to one folder gateway apis this is for apis request forwarding or gateway ws this is for websockets request forwarding
+npm run dev
+```
+After all this send the request to gateway api like normal requests.
